@@ -1,0 +1,14 @@
+import smtplib
+from cred import email, password
+
+smtplib.SMTP('smtp.google.com', 587)
+
+session.starttls()
+
+session.login(email, password)
+
+message = 'Hi This is Eswar and i am sending an email using python scripts'
+
+session.sendmail(email, email, message)
+
+session.quit()
